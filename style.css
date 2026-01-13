@@ -1,17 +1,26 @@
 /* Spotify-inspired Dark Theme */
 body {
-    background-color: #121212; /* Spotify Dark Background */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
     color: white;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     padding-top: 50px;
 }
+
 
 .container {
     max-width: 600px;
     background-color: #181818;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Customizing Bootstrap Inputs */
@@ -23,13 +32,13 @@ body {
 
 .form-control:focus {
     background-color: #333;
-    border-color: #1DB954; /* Spotify Green */
+    border-color: #2f1db9; /* Spotify Green */
     box-shadow: none;
 }
 
 /* Spotify Green Button */
 .btn-primary {
-    background-color: #1DB954;
+    background-color: #371db9;
     border: none;
     border-radius: 500px; /* Fully rounded buttons */
     padding: 12px 30px;
@@ -39,16 +48,17 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #1ed760;
+    background-color: #371ed7;
     transform: scale(1.05);
 }
 
 /* Sections visibility */
-#tokenSection, #deviceSection {
+#tokenSection,
+#deviceSection {
     text-align: center;
 }
 
 h3 {
-    color: #1DB954;
+    color: #3a1db9;
     margin-bottom: 20px;
 }
